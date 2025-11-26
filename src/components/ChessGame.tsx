@@ -1,5 +1,5 @@
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import ChessBoard from './ChessBoard';
 import GameControls from './GameControls';
 import GameStatus from './GameStatus';
@@ -22,8 +22,60 @@ const ChessGame = () => {
     moveHistory: [],
     recentCapture: undefined
   }));
+  const [activeGameId, setActiveGameId] = useState<number | null>(null);
 
   const { toast } = useToast();
+
+  const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001';
+
+  // autosave helper (POST to create new game or PUT to update existing)
+  const saveGame = useCallback(async (stateToSave: ChessGameState) => {
+    try {
+      const payload = {
+        title: 'Saved Game',
+        createdAt: new Date().toISOString(),
+        players: { whitePlayerId: 1, blackPlayerId: 2 },
+        gameMode: stateToSave.gameMode,
+        currentPlayer: stateToSave.currentPlayer,
+        board: stateToSave.board,
+        selectedSquare: stateToSave.selectedSquare,
+        validMoves: stateToSave.validMoves,
+        capturedPieces: stateToSave.capturedPieces,
+        isCheck: stateToSave.isCheck,
+        isCheckmate: stateToSave.isCheckmate,
+        isStalemate: stateToSave.isStalemate,
+        moveHistory: stateToSave.moveHistory,
+        recentCapture: stateToSave.recentCapture
+      } as any;
+
+      if (activeGameId) {
+        const res = await fetch(`${API_BASE}/games/${activeGameId}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...payload, id: activeGameId })
+        });
+        if (!res.ok) throw new Error('Failed to update game');
+        toast({ title: 'Game saved', description: 'Autosaved current game.', variant: 'default' });
+      } else {
+        const res = await fetch(`${API_BASE}/games`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('Failed to create game');
+        const saved = await res.json();
+        if (saved && saved.id) {
+          setActiveGameId(saved.id);
+        }
+        toast({ title: 'Game created', description: 'Autosaved new game.', variant: 'default' });
+      }
+    } catch (err: any) {
+      console.error('Error saving game:', err);
+      toast({ title: 'Save failed', description: err?.message || 'Failed to autosave game.', variant: 'destructive' });
+      throw err;
+    }
+  }, [API_BASE, activeGameId, toast]);
+  
 
   const handleSquareClick = useCallback((row: number, col: number) => {
     if (gameState.isCheckmate || gameState.isStalemate) return;
@@ -114,6 +166,11 @@ const ChessGame = () => {
 
     setGameState(newGameState);
 
+    // Autosave the game state after every move
+    saveGame(newGameState).catch(err => {
+      // Failed autosave will display a toast already in saveGame; swallow here
+    });
+
     if (checkmate) {
       toast({
         title: "🎉 Checkmate!",
@@ -135,7 +192,9 @@ const ChessGame = () => {
         description: `${result.capturedPiece.color} ${result.capturedPiece.type} has been captured.`,
       });
     }
-  }, [gameState, toast]);
+  }, [gameState, toast, saveGame]);
+
+  
 
   const getValidMovesForPiece = (board: any[][], position: { row: number; col: number }, player: string) => {
     const moves = [];
@@ -163,6 +222,7 @@ const ChessGame = () => {
       moveHistory: [],
       recentCapture: undefined
     });
+    setActiveGameId(null);
   }, []);
 
   return (
