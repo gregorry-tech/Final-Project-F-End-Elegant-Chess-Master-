@@ -3229,6 +3229,963 @@
         "hasMoved": true
       },
       "id": "5862"
+    },
+    {
+      "title": "Saved Game",
+      "createdAt": "2025-11-27T02:29:59.103Z",
+      "players": {
+        "whitePlayerId": 1,
+        "blackPlayerId": 2
+      },
+      "gameMode": "two-player",
+      "currentPlayer": "black",
+      "board": [
+        [
+          {
+            "type": "rook",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          null,
+          {
+            "type": "king",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "rook",
+            "color": "black"
+          }
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          null,
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "queen",
+            "color": "black",
+            "hasMoved": true
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          {
+            "type": "knight",
+            "color": "white",
+            "hasMoved": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          null,
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          }
+        ],
+        [
+          {
+            "type": "rook",
+            "color": "white"
+          },
+          null,
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "queen",
+            "color": "white"
+          },
+          {
+            "type": "king",
+            "color": "white"
+          },
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "knight",
+            "color": "white"
+          },
+          {
+            "type": "rook",
+            "color": "white"
+          }
+        ]
+      ],
+      "selectedSquare": null,
+      "validMoves": [],
+      "capturedPieces": {
+        "white": [
+          {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          }
+        ],
+        "black": [
+          {
+            "type": "pawn",
+            "color": "black",
+            "hasMoved": true
+          }
+        ]
+      },
+      "isCheck": false,
+      "isCheckmate": false,
+      "isStalemate": false,
+      "moveHistory": [
+        {
+          "from": {
+            "row": 6,
+            "col": 4
+          },
+          "to": {
+            "row": 4,
+            "col": 4
+          },
+          "piece": {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          }
+        },
+        {
+          "from": {
+            "row": 1,
+            "col": 3
+          },
+          "to": {
+            "row": 3,
+            "col": 3
+          },
+          "piece": {
+            "type": "pawn",
+            "color": "black",
+            "hasMoved": true
+          }
+        },
+        {
+          "from": {
+            "row": 4,
+            "col": 4
+          },
+          "to": {
+            "row": 3,
+            "col": 3
+          },
+          "piece": {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          },
+          "capturedPiece": {
+            "type": "pawn",
+            "color": "black",
+            "hasMoved": true
+          }
+        },
+        {
+          "from": {
+            "row": 0,
+            "col": 3
+          },
+          "to": {
+            "row": 3,
+            "col": 3
+          },
+          "piece": {
+            "type": "queen",
+            "color": "black",
+            "hasMoved": true
+          },
+          "capturedPiece": {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          }
+        },
+        {
+          "from": {
+            "row": 7,
+            "col": 1
+          },
+          "to": {
+            "row": 5,
+            "col": 2
+          },
+          "piece": {
+            "type": "knight",
+            "color": "white",
+            "hasMoved": true
+          }
+        }
+      ],
+      "id": "b643"
+    },
+    {
+      "title": "Saved Game",
+      "createdAt": "2025-11-27T02:30:58.511Z",
+      "players": {
+        "whitePlayerId": 1,
+        "blackPlayerId": 2
+      },
+      "gameMode": "two-player",
+      "currentPlayer": "white",
+      "board": [
+        [
+          {
+            "type": "rook",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          {
+            "type": "queen",
+            "color": "black"
+          },
+          {
+            "type": "king",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "rook",
+            "color": "black"
+          }
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          null,
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          {
+            "type": "pawn",
+            "color": "black",
+            "hasMoved": true
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          null,
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          }
+        ],
+        [
+          {
+            "type": "rook",
+            "color": "white"
+          },
+          {
+            "type": "knight",
+            "color": "white"
+          },
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "queen",
+            "color": "white"
+          },
+          {
+            "type": "king",
+            "color": "white"
+          },
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "knight",
+            "color": "white"
+          },
+          {
+            "type": "rook",
+            "color": "white"
+          }
+        ]
+      ],
+      "selectedSquare": null,
+      "validMoves": [],
+      "capturedPieces": {
+        "white": [],
+        "black": []
+      },
+      "isCheck": false,
+      "isCheckmate": false,
+      "isStalemate": false,
+      "moveHistory": [
+        {
+          "from": {
+            "row": 6,
+            "col": 4
+          },
+          "to": {
+            "row": 4,
+            "col": 4
+          },
+          "piece": {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          }
+        },
+        {
+          "from": {
+            "row": 1,
+            "col": 3
+          },
+          "to": {
+            "row": 3,
+            "col": 3
+          },
+          "piece": {
+            "type": "pawn",
+            "color": "black",
+            "hasMoved": true
+          }
+        }
+      ],
+      "id": "92d7"
+    },
+    {
+      "id": "231e",
+      "title": "Saved Game",
+      "createdAt": "2025-11-27T02:31:33.305Z",
+      "players": {
+        "whitePlayerId": 1,
+        "blackPlayerId": 2
+      },
+      "gameMode": "two-player",
+      "currentPlayer": "black",
+      "board": [
+        [
+          {
+            "type": "rook",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          {
+            "type": "queen",
+            "color": "black"
+          },
+          {
+            "type": "king",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "rook",
+            "color": "black"
+          }
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          null,
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          }
+        ],
+        [
+          {
+            "type": "rook",
+            "color": "white"
+          },
+          {
+            "type": "knight",
+            "color": "white"
+          },
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "queen",
+            "color": "white"
+          },
+          {
+            "type": "king",
+            "color": "white"
+          },
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "knight",
+            "color": "white"
+          },
+          {
+            "type": "rook",
+            "color": "white"
+          }
+        ]
+      ],
+      "selectedSquare": null,
+      "validMoves": [],
+      "capturedPieces": {
+        "white": [],
+        "black": []
+      },
+      "isCheck": false,
+      "isCheckmate": false,
+      "isStalemate": false,
+      "moveHistory": [
+        {
+          "from": {
+            "row": 6,
+            "col": 4
+          },
+          "to": {
+            "row": 4,
+            "col": 4
+          },
+          "piece": {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "6ee1",
+      "title": "Saved Game",
+      "createdAt": "2025-11-27T02:31:49.928Z",
+      "players": {
+        "whitePlayerId": 1,
+        "blackPlayerId": 2
+      },
+      "gameMode": "two-player",
+      "currentPlayer": "black",
+      "board": [
+        [
+          {
+            "type": "rook",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          {
+            "type": "queen",
+            "color": "black"
+          },
+          {
+            "type": "king",
+            "color": "black"
+          },
+          {
+            "type": "bishop",
+            "color": "black"
+          },
+          {
+            "type": "knight",
+            "color": "black"
+          },
+          {
+            "type": "rook",
+            "color": "black"
+          }
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          },
+          {
+            "type": "pawn",
+            "color": "black"
+          }
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          },
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          null,
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          },
+          {
+            "type": "pawn",
+            "color": "white"
+          }
+        ],
+        [
+          {
+            "type": "rook",
+            "color": "white"
+          },
+          {
+            "type": "knight",
+            "color": "white"
+          },
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "queen",
+            "color": "white"
+          },
+          {
+            "type": "king",
+            "color": "white"
+          },
+          {
+            "type": "bishop",
+            "color": "white"
+          },
+          {
+            "type": "knight",
+            "color": "white"
+          },
+          {
+            "type": "rook",
+            "color": "white"
+          }
+        ]
+      ],
+      "selectedSquare": null,
+      "validMoves": [],
+      "capturedPieces": {
+        "white": [],
+        "black": []
+      },
+      "isCheck": false,
+      "isCheckmate": false,
+      "isStalemate": false,
+      "moveHistory": [
+        {
+          "from": {
+            "row": 6,
+            "col": 4
+          },
+          "to": {
+            "row": 4,
+            "col": 4
+          },
+          "piece": {
+            "type": "pawn",
+            "color": "white",
+            "hasMoved": true
+          }
+        }
+      ]
     }
   ],
   "leaderboard": [
